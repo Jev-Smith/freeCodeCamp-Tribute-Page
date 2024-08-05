@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 body{
@@ -16,7 +17,9 @@ body{
     position: relative;
 }
 
-#title, .hero p{
+#title,
+.hero p,
+.hero div{
     position: absolute;
 }
 
@@ -30,9 +33,16 @@ body{
     width: 100%;
 }
 
+.fixed-image,
+.hero div{
+    left: 0;
+}
+
 /* Hero styles */
 .hero{
     color: var(--white);
+    position: relative;
+    overflow: hidden;
 }
 
 #title{
@@ -50,12 +60,41 @@ body{
     font-size: 2em;
 }
 
+.hero div{
+    right: 0;
+    bottom: 30px;
+    text-align: center;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    transform: scale(3);
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from {
+        position: relative;
+        bottom: 30px;
+    }
+
+    to {
+        position: relative;
+        bottom: 10px;
+    }
+}
+
 /* Fixed Image */
 .fixed-image{
     width: 100%;
     position: fixed;
     z-index: -1;
-    left: 0;
     top: 0;
     object-fit: cover;
 }
