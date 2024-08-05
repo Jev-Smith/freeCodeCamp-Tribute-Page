@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+body{
+    font-family: "Platypi", serif;
+}
+
+:root{
+    --white:#fff;
+}
+
+#main {
+    position: relative;
+}
+
+#title, .hero p{
+    position: absolute;
+}
+
+.fixed-image,
+.hero img{
+    height: 100vh;
+}
+
+.fixed-image,
+.hero img {
+    width: 100%;
+}
+
+/* Hero styles */
+.hero{
+    color: var(--white);
+}
+
+#title{
+    top: 40px;
+    left: 25px;
+    font-size: 5em;
+    font-family: "Metal", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero p{
+    top: 170px;
+    left: 20px;
+    font-size: 2em;
+}
+
+/* Fixed Image */
+.fixed-image{
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
