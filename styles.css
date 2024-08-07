@@ -5,12 +5,13 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Platypi", serif;
-}
-
 :root{
     --white:#fff;
+}
+
+body {
+    font-family: "Platypi", serif;
+    color: var(--white);
 }
 
 #main {
@@ -40,14 +41,13 @@ body{
 
 /* Hero styles */
 .hero{
-    color: var(--white);
     position: relative;
     overflow: hidden;
 }
 
 #title{
     top: 40px;
-    left: 25px;
+    left: 50px;
     font-size: 5em;
     font-family: "Metal", serif;
     font-weight: 400;
@@ -56,8 +56,8 @@ body{
 
 .hero p{
     top: 170px;
-    left: 20px;
-    font-size: 2em;
+    left: 50px;
+    font-size: 1.5em;
 }
 
 .hero div{
@@ -73,6 +73,7 @@ body{
         'GRAD' 0,
         'opsz' 24;
     transform: scale(3);
+    position: relative;
     animation-name: bounce;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -80,12 +81,10 @@ body{
 
 @keyframes bounce {
     from {
-        position: relative;
         bottom: 30px;
     }
 
     to {
-        position: relative;
         bottom: 10px;
     }
 }
@@ -97,4 +96,23 @@ body{
     z-index: -1;
     top: 0;
     object-fit: cover;
+}
+
+.fixed-image-para{
+    padding: 20px;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 50%;
+    background-color: rgba(196, 124, 42, 0.9);
+    font-size: 2em;
+}
+
+.hidden{
+    opacity: 0;
+
+}
+
+.show{
+    opacity: 1;
+    transition: all 1.7s;
 }

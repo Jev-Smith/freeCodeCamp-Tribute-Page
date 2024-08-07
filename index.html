@@ -25,6 +25,8 @@
         
         <img src="https://thegospelforyou.com/wp-content/uploads/2021/02/jesus_speaking_crowd.jpeg"
             alt="Jesus teaching a crowd of people" class="fixed-image">
+        
+        <p class="fixed-image-para hidden">Through His ministry, many were shown the way to eternal life.</p>
     
         <figure id="img-div">
             <img src="" id="image" alt="" />
@@ -35,6 +37,75 @@
             hello world
             <a href="#" target="_blank">click</a>
         </article>
+
+        <script>
+            const hiddenElements = document.querySelectorAll('.hidden');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting){
+                        entry.target.classList.add('show')
+                    }
+                    else{
+                        entry.target.classList.remove('show')
+                    }
+                })
+            })
+
+            hiddenElements.forEach(el => observer.observe(el));
+
+        </script>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </main>
 </body>
 </html>
