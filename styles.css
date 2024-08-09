@@ -18,6 +18,8 @@ body {
     position: relative;
 }
 
+/* Shared styles */
+
 #title,
 .hero p,
 .hero div{
@@ -30,13 +32,34 @@ body {
 }
 
 .fixed-image,
-.hero img {
+.hero img,
+#image,
+.resurrection-section img {
     width: 100%;
 }
 
 .fixed-image,
 .hero div{
     left: 0;
+}
+
+#image,
+.fixed-image-para,
+.resurrection-section {
+    margin-top: 90px;
+}
+
+.hero p,
+figcaption,
+figure p,
+.resurrection-section p,
+a{
+    font-size: 1.5em;
+}
+
+.crucifixion-info,
+.resurrection-section p{
+    padding: 20px;
 }
 
 /* Hero styles */
@@ -56,8 +79,7 @@ body {
 
 .hero p{
     top: 170px;
-    left: 50px;
-    font-size: 1.5em;
+    left: 43px;
 }
 
 .hero div{
@@ -71,7 +93,10 @@ body {
         'FILL' 0,
         'wght' 400,
         'GRAD' 0,
-        'opsz' 24;
+        'opsz' 24
+}
+
+.down-arrow{
     transform: scale(3);
     position: relative;
     animation-name: bounce;
@@ -89,9 +114,8 @@ body {
     }
 }
 
-/* Fixed Image */
+/* Fixed image */
 .fixed-image{
-    width: 100%;
     position: fixed;
     z-index: -1;
     top: 0;
@@ -101,7 +125,6 @@ body {
 .fixed-image-para{
     padding: 20px;
     margin-left: 40px;
-    margin-top: 40px;
     width: 50%;
     background-color: rgba(196, 124, 42, 0.9);
     font-size: 2em;
@@ -115,4 +138,48 @@ body {
 .show{
     opacity: 1;
     transition: all 1.7s;
+}
+
+/* Figure styling */
+
+#image,
+.resurrection-section img{
+    display: block;
+}
+
+.crucifixion-info{
+    padding: 20px;
+    background-color: rgb(60, 43, 21);
+}
+
+figure p{
+    padding-top: 10px;
+}
+
+.crucifixion-img-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Resurrection section */
+.resurrection-section p,
+footer{
+    background-color: rgba(196, 124, 42);
+}
+
+footer{
+    padding: 0 0 20px 20px;
+}
+
+a{
+    color: var(--white);
+}
+
+a:hover, footer:hover{
+    color: #000;
+}
+
+.right-arrow{
+    transform: translate(15px, 5px);
 }
