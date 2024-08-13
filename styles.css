@@ -62,6 +62,11 @@ a{
     padding: 20px;
 }
 
+body,
+.fixed-image{
+    max-width: 1000px;
+}
+
 /* Hero styles */
 .hero{
     position: relative;
@@ -162,6 +167,11 @@ figure p{
     flex-direction: column;
 }
 
+#image{
+    height: 100%;
+    max-width: 100%;
+}
+
 /* Resurrection section */
 .resurrection-section p,
 footer{
@@ -196,5 +206,31 @@ a:hover, footer:hover{
     }
     to{
         transform: translate(25px, 5px);
+    }
+}
+
+@media screen and (max-width: 414px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .fixed-image{
+        top: 0;
+        bottom: 0;
+        left: auto;
+        right: auto;
+    }
+
+    body {
+        margin: 0 auto;
+    }
+}
+
+@media(prefers-reduced-motion){
+    .show{
+        transition: none;
     }
 }
