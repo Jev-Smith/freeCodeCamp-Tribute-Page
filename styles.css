@@ -7,6 +7,7 @@
 
 :root{
     --white:#fff;
+    --black: #000;
 }
 
 body {
@@ -187,7 +188,7 @@ a{
 }
 
 a:hover, footer:hover{
-    color: #000;
+    color: var(--black);
 }
 
 .right-arrow{
@@ -225,6 +226,7 @@ a:hover, footer:hover{
     }
 
     body {
+        background-color: var(--black);
         margin: 0 auto;
     }
 }
